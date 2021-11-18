@@ -3,37 +3,39 @@ App to share the code to all installed apps in your device
 
 # Code
 
-#### 1st Activity 
+#### MainActivity.java
 ```
-Button addButton;
-TextView putView;
-EditText Number1, Number2;
-    
-int n1, n2, ans;
+TextView tvQuote;
+Button buttonShare;
 
-//list the items
-addButton = findViewById(R.id.addButton);
-putView = findViewById(R.id.putView);
-Number1 = findViewById(R.id.Number1);
-Number2 = findViewById(R.id.Number2);
+//hide the toolbar
+getSupportActionBar().hide();
 
-        //add numbers when button is clicked
-        addButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+tvQuote = findViewById(R.id.tvQuote);
+buttonShare = findViewById(R.id.buttonShare);
 
-                //get the 2 number given by the user
-                n1 = Integer.parseInt(Number1.getText().toString());
-                n2 = Integer.parseInt(Number2.getText().toString());
-                ans = n1 + n2;
+        buttonShare.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
 
-                putView.setText(n1 + " + " + n2 + " = " + ans);
-            }
-        });
+                        String quoteToShare = tvQuote.getText().toString();
+
+                        Intent intent = new Intent();
+
+                        intent.setAction(Intent.ACTION_SEND);
+                        intent.setType("text/plain");
+                        intent.putExtra(Intent.EXTRA_TEXT, quoteToShare);
+
+                        startActivity(intent);
+                    }
+                }
+        );
 ```
 
 # App Highlight
 
-<img src="app_images/Add Code.png" width="1000" /><br>
+<img src="app_images/Quote Share Code.png" width="1000" /><br>
 
-<img src="app_images/Add App.png" width="300" /><br>
+<img src="app_images/Quote Share App1.png" width="300" /><br>
+
+<img src="app_images/Quote Share App2.png" width="300" /><br>
