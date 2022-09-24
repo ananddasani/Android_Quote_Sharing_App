@@ -36,8 +36,7 @@ buttonShare = findViewById(R.id.buttonShare);
 
 # App Highlight
 
-<img src="app_images/Quote Share Code.png" width="1000" /><br>
+![Quote Share Code](https://user-images.githubusercontent.com/74413402/192095193-846e56fe-7f46-45ec-bf35-109b932ad632.png)
+![Quote Share App1](https://user-images.githubusercontent.com/74413402/192095196-156f7515-eb53-4837-a5e5-a4fbed178194.png)
+![Quote Share App2](https://user-images.githubusercontent.com/74413402/192095197-ddc16863-cafd-4b3d-aa84-98c697dffe90.png)
 
-<img src="app_images/Quote Share App1.png" width="300" /><br>
-
-<img src="app_images/Quote Share App2.png" width="300" /><br>
