@@ -1,6 +1,8 @@
 # Android_Quote_Sharing_App
 App to share the code to all installed apps in your device
 
+This topic is a part of [My Complete Andorid Course](https://github.com/ananddasani/Android_Apps)
+
 # Code
 
 #### MainActivity.java
